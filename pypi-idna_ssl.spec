@@ -4,7 +4,7 @@
 #
 Name     : pypi-idna_ssl
 Version  : 1.1.0
-Release  : 25
+Release  : 26
 URL      : https://files.pythonhosted.org/packages/46/03/07c4894aae38b0de52b52586b24bf189bb83e4ddabfe2e2c8f2419eec6f4/idna-ssl-1.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/46/03/07c4894aae38b0de52b52586b24bf189bb83e4ddabfe2e2c8f2419eec6f4/idna-ssl-1.1.0.tar.gz
 Summary  : Patch ssl.match_hostname for Unicode(idna) domains support
@@ -14,9 +14,6 @@ Requires: pypi-idna_ssl-license = %{version}-%{release}
 Requires: pypi-idna_ssl-python = %{version}-%{release}
 Requires: pypi-idna_ssl-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: idna-ssl
-Provides: idna-ssl-python
-Provides: idna-ssl-python3
 BuildRequires : pypi(idna)
 BuildRequires : pypi(pytest_runner)
 
@@ -60,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641444205
+export SOURCE_DATE_EPOCH=1649761906
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
